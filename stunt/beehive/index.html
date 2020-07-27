@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beehive Valley Route Guide</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+<body>
+    <h1>Beehive Valley Route Guide</h1>
+    <h3>Warning! Zooming beyond 200% on chrome based browsers might make the page unusable!</h3>
+    <div class="big">
+        <input type="checkbox" onclick="highlights()" id="hl" checked>Highlights
+        <input type="checkbox" onclick="car()" id="cr" checked>Car route
+        <input type="checkbox" onclick="boat()" id="bt" checked>Boat route
+        <p><a href="full.png">Download map as an image</a></p>
+    </div>
+    <div class="parent">
+        <img class="image" src="Háttér.png" />
+        <img class="images" id="highlight" src="Highlights.png" />
+        <img class="images" id="boat" src="Boat.png" />
+        <img class="images" id="car" src="Car.png" />
+    </div>
+    <p>If you are wondering why there's a horizontal scroll bar, blame chrome. It can't even process the full image and still messes up above 200% zoom in this size ¯\_(ツ)_/¯</p>
+</body>
+<style>
+.parent {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height:1138px;
+  width:1600px;
+}
+.image {
+  position: relative;
+  top: -840px;
+  left: -1200px;
+  width:4000px;
+  transform: scale(0.4);
+}
+.images {
+  position: absolute;
+  top: -840px;
+  left: -1200px;
+  width:4000px;
+  transform: scale(0.4);
+}
+.big{
+    font-size: 2em;
+}
+</style>
+<script>
+    function highlights()
+    {
+        if(document.getElementById("hl").checked==true)
+        {
+            $("#highlight").css("visibility", "visible");
+        }
+        else{
+            $("#highlight").css("visibility", "hidden");
+        }
+    }
+    function car()
+    {
+        if(document.getElementById("cr").checked==true)
+        {
+            $("#car").css("visibility", "visible");
+        }
+        else{
+            $("#car").css("visibility", "hidden");
+        }
+    }
+    function boat()
+    {
+        if(document.getElementById("bt").checked==true)
+        {
+            $("#boat").css("visibility", "visible");
+        }
+        else{
+            $("#boat").css("visibility", "hidden");
+        }
+    }
+</script>
+</html>
