@@ -1,5 +1,5 @@
 body{
-    background-image: url(rv_boxart.png);
+    background-image: url(/rv_boxart.png);
     background-repeat: no-repeat;
     background-size: cover;   
 }
@@ -10,4 +10,15 @@ body{
 }
 .crew{
     width:200px;
+}
+.stuntimages{
+    width:128px;
+}
+.stuntcards{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#stuntcardplacement{
+    width:50px;
 }
