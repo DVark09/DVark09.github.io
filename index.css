@@ -1,0 +1,13 @@
+body{
+    background-image: url(rv_boxart.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+#box{
+    background-color: rgba(0,0,0,0.7);
+    color:#D5D5D5;
+    min-height: calc(100vh - 56px);
+}
+.crew{
+    width:200px;
+}
