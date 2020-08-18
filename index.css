@@ -22,3 +22,8 @@ body{
 #stuntcardplacement{
     width:50px;
 }
+iframe{
+    max-width: 800px;
+    max-height: 450px;
+    right:0;
+}
