@@ -27,3 +27,9 @@ iframe{
     max-height: 450px;
     right:0;
 }
+.box{
+    display: block;
+}
+.iframebox{
+  max-height: 512px;
+}
