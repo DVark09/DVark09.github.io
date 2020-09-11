@@ -33,3 +33,10 @@ iframe{
 .iframebox{
   max-height: 512px;
 }
+table{
+    max-width: 768px;
+    margin: 0 auto;
+}
+tr,td{
+    width: 192px;
+}
